@@ -1,3 +1,66 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// ——— Allure « livre » : colonne étroite, texte posé ———
+
+// Colonne centrale étroite (environ 65 caractères par ligne)
+.center > * {
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Texte courant : un peu plus grand, interligne aéré, justifié avec césure
+article {
+  font-size: 1.12rem;
+
+  p, li {
+    line-height: 1.75;
+    text-align: justify;
+    hyphens: auto;
+  }
+}
+
+// Titres : sobres, graisse légère
+h1, h2, h3, h4 {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.page-title, article > h1 {
+  font-weight: 300;
+}
+
+// Liens : pas de surlignage coloré, un simple filet discret
+a, a.internal {
+  font-weight: 400;
+  background-color: transparent;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: var(--gray);
+}
+
+// Pas de soulignement dans les menus et la navigation
+.page-title a, .explorer a, .breadcrumb-container a, .tags a, .toc a,
+.recent-notes a, nav a {
+  text-decoration: none;
+}
+
+// Séparateur horizontal discret, façon ornement de livre
+hr {
+  border: none;
+  border-top: none;
+  background: none;
+  height: auto;
+  margin: 2.5rem auto;
+  text-align: center;
+  overflow: visible;
+  &::after {
+    content: "⁂";
+    color: var(--gray);
+    font-size: 1.1rem;
+  }
+}
