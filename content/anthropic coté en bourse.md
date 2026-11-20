@@ -1,7 +1,10 @@
 ---
 title: Anthropic coté en bourse
-date: 2026-11-20 
-tags: - IA, finances, Anthropic
+date: 2026-11-20
+tags:
+  - IA
+  - finances
+  - Anthropic
 ---
 
 Anthropic en bourse : la plus grosse introduction de l'histoire, et un air de déjà-vu
