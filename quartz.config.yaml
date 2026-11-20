@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Le blog de Jean
+  pageTitle: Mnémoglyphes
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
