@@ -1,38 +1,51 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// Allure inspirée du thème Obsidian « Borozdov Ember »
+// (Nikita Borozdov, licence MIT — https://github.com/borozdov-obsidian-themes/ember) :
+// papier clair, encre presque noire, prose en EB Garamond,
+// titres discrets en linéale système, une seule couleur d'accent : la braise.
 
-// ——— Allure « livre » : colonne étroite, texte posé ———
+$sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
 
-// Colonne centrale étroite (environ 65 caractères par ligne)
+// Colonne centrale étroite
 .center > * {
   max-width: 34rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-// Texte courant : un peu plus grand, interligne aéré, justifié avec césure
+// Prose comme dans un livre
 article {
-  font-size: 1.12rem;
+  font-size: 1.2rem;
 
   p, li {
-    line-height: 1.75;
+    line-height: 1.6;
     text-align: justify;
     hyphens: auto;
   }
+
+  blockquote {
+    font-style: italic;
+  }
 }
 
-// Titres : sobres, graisse légère
-h1, h2, h3, h4 {
+// Titres : linéale, graisse normale, resserrés
+h1, h2, h3, h4, .page-title, .page-title a {
+  font-family: $sans;
   font-weight: 400;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
+}
+h1 { letter-spacing: -0.025em; }
+h4 { font-weight: 500; }
+
+// Interface (dates, menus, recherche) en linéale
+.content-meta, .breadcrumb-container, .explorer, .recent-notes,
+.search, footer, .toc, .tags {
+  font-family: $sans;
+  font-size: 0.92em;
 }
 
-.page-title, article > h1 {
-  font-weight: 300;
-}
-
-// Liens : pas de surlignage coloré, un simple filet discret
+// Liens couleur braise, simple filet
 a, a.internal {
   font-weight: 400;
   background-color: transparent;
@@ -40,16 +53,19 @@ a, a.internal {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
-  text-decoration-color: var(--gray);
+  text-decoration-color: color-mix(in srgb, var(--secondary) 35%, transparent);
 }
-
-// Pas de soulignement dans les menus et la navigation
 .page-title a, .explorer a, .breadcrumb-container a, .tags a, .toc a,
 .recent-notes a, nav a {
   text-decoration: none;
 }
 
-// Séparateur horizontal discret, façon ornement de livre
+// Coins « imprimés » de 4 px
+pre, code, .callout, input, .search > .search-button, .tag-link {
+  border-radius: 4px !important;
+}
+
+// Séparateur : petit ornement
 hr {
   border: none;
   border-top: none;
@@ -64,3 +80,12 @@ hr {
     font-size: 1.1rem;
   }
 }
+
+// Comme dans Ember : la braise est réservée aux liens du texte,
+// la navigation reste à l'encre.
+.page-title a, .explorer a, .breadcrumb-container a, .recent-notes a,
+.toc a, nav a, footer a, .left a, .right a {
+  color: var(--dark);
+  &:hover { color: var(--secondary); }
+}
+.explorer .active, .explorer a.active { color: var(--secondary); }

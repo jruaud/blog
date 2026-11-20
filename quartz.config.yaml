@@ -15,30 +15,30 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Fraunces
-      body: Source Serif 4
+      header: Inter
+      body: EB Garamond
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#f7f1e3"
-        lightgray: "#e7dfcb"
-        gray: "#a59c87"
-        darkgray: "#1c1b19"
-        dark: "#111111"
-        secondary: "#4a3626"
-        tertiary: "#8b6b4a"
-        highlight: rgba(120, 90, 50, 0.07)
-        textHighlight: "#efdf9f88"
+        light: "#f7f7f4"
+        lightgray: "#e2e1dc"
+        gray: "#a1a19f"
+        darkgray: "#26251e"
+        dark: "#26251e"
+        secondary: "#c43d00"
+        tertiary: "#f54e00"
+        highlight: rgba(245, 78, 0, 0.08)
+        textHighlight: rgba(192, 133, 50, 0.28)
       darkMode:
-        light: "#1c1a16"
-        lightgray: "#36322b"
-        gray: "#7d7567"
-        darkgray: "#e6dfcf"
-        dark: "#f2ecdf"
-        secondary: "#cfb38c"
-        tertiary: "#e0c9a6"
-        highlight: rgba(220, 190, 140, 0.08)
-        textHighlight: "#b3aa0288"
+        light: "#1c1b17"
+        lightgray: "#33322b"
+        gray: "#7a7974"
+        darkgray: "#ecebe6"
+        dark: "#ecebe6"
+        secondary: "#ff7f47"
+        tertiary: "#f54e00"
+        highlight: rgba(255, 127, 71, 0.12)
+        textHighlight: rgba(217, 160, 79, 0.30)
   links:
     markdownLinkResolution: shortest
   contentIndex:
