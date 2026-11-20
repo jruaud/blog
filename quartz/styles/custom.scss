@@ -2,10 +2,9 @@
 
 // Allure inspirée du thème Obsidian « Borozdov Ember »
 // (Nikita Borozdov, licence MIT — https://github.com/borozdov-obsidian-themes/ember) :
-// papier clair, encre presque noire, prose en EB Garamond,
-// titres discrets en linéale système, une seule couleur d'accent : la braise.
+// papier clair, encre presque noire, police unique : Google Sans Flex (titres, texte, interface), une seule couleur d'accent : la braise.
 
-$sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+$sans: "Google Sans Flex", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
 // Colonne centrale étroite
 .center > * {

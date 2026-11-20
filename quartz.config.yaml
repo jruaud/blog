@@ -15,9 +15,15 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Inter
-      body: EB Garamond
-      code: IBM Plex Mono
+      header:
+        name: Google Sans Flex
+        weights: [400, 700]
+        includeItalic: false
+      body:
+        name: Google Sans Flex
+        weights: [400, 600]
+        includeItalic: false
+      code: Google Sans Code
     colors:
       lightMode:
         light: "#f7f7f4"
