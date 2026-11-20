@@ -1,3 +1,9 @@
+---
+title: Anthropic coté en bourse
+date: 2026-11-20 
+tags: - IA, finances, Anthropic
+---
+
 Anthropic en bourse : la plus grosse introduction de l'histoire, et un air de déjà-vu
 
 La grande nouvelle du jour, c'est l'entrée en bourse d'Anthropic, le géant de l'IA à l'origine du populaire chatbot Claude. L'entreprise n'a même pas encore six ans. Elle a levé 81,3 milliards de dollars, soit la plus importante introduction en bourse de tous les temps, devant SpaceX en juin dernier.
